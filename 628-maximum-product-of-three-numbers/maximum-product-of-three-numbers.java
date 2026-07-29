@@ -1,8 +1,9 @@
 class Solution {
     public int maximumProduct(int[] nums) {
+        int n=nums.length;
         Arrays.sort(nums);
-        int product=nums[nums.length-1]*nums[nums.length-2]*nums[nums.length-3];
-        int product1=nums[0]*nums[1]*nums[nums.length-1];
+        int product=nums[n-1]*nums[n-2]*nums[n-3];
+        int product1=nums[0]*nums[1]*nums[n-1];
         return Math.max(product,product1);
     }
 }
