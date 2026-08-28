@@ -1,5 +1,6 @@
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
+        
         int left=0;
         int right=people.length-1;
         int count=0;
